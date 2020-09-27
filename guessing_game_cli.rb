@@ -7,16 +7,12 @@ def run_guessing_game
   while user_input != "exit" do
    if user_input.to_i == comp_num
       puts "You guessed the correct number!"
-    else
+    elsif
       puts "The computer guessed #{comp_num}."
-    end
-    comp_num = rand(6) + 1
-    user_input = gets.chomp
-  end
-
-  if user_input == "exit"
+      
+    else user_input == "exit"
     puts "Goodbye!"
+    
   end
 end 
-
 
