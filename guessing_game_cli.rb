@@ -6,7 +6,7 @@ def run_guessing_game
   
   while user_input != "exit" do
    if user_input.to_i == comp_num
-      puts "You guessed the correct number!"
+     
     elsif
       puts "The computer guessed #{comp_num}."
       
