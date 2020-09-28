@@ -1,4 +1,5 @@
-# Code your solution here!
+require 'pry'
+
 def run_guessing_game
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
@@ -9,6 +10,7 @@ def run_guessing_game
   
     elsif guess.to_i == computer_number
       puts "You guessed the correct number!"
+      binding.pry
         
     elsif guess.to_i != computer_number
       puts "The computer guessed #{computer_number}."
